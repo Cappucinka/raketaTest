@@ -1,0 +1,9 @@
+mixin sort
+  .sort#js_sort(tabindex="1")
+    .sort__header
+      h6.sort__title.sort__icon.sort__icon--up#js_sort_selected По площади
+    ul.sort__list#js_sort_list
+      li.sort__item.sort__icon.sort__icon--up(data-text="По площади" data-value="1") По площади
+      li.sort__item.sort__icon.sort__icon--down(data-text="По площади" data-value="2") По площади
+      li.sort__item.sort__icon.sort__icon--up(data-text="По цене" data-value="3") По цене
+      li.sort__item.sort__icon.sort__icon--down(data-text="По цене" data-value="4") По цене

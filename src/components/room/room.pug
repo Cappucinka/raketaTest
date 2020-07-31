@@ -1,0 +1,23 @@
+article.room
+  img.room__img(src=img, alt=imgAlt)
+  .room__container
+    h4.room__title= name
+    .room__info
+      if size
+        .room__size Размеры (ШхГхВ) - #{size} см
+      .room__area Площадь - #{String(area.toFixed(2)).replace('.',',')} м2
+      .room__equipment Оснащение номера
+        .room__equipment-items
+          if equipment.empty
+            .room__equipment-item.room__equipment-item--empty
+          if equipment.bed
+            .room__equipment-item.room__equipment-item--bed
+          if equipment.scratchingPost
+            .room__equipment-item.room__equipment-item--scratching-post
+          if equipment.gameComplex
+            .room__equipment-item.room__equipment-item--game-complex
+          if equipment.house
+            .room__equipment-item.room__equipment-item--house
+      .room__price Цена за сутки: 
+        span.room__value #{price}&#8381
+    button.room__btn Забронировать

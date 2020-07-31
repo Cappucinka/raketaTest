@@ -1,0 +1,42 @@
+mixin filter-item
+  .filter-item
+    h5.filter-item__title Цена за сутки,&#8381
+    input.filter-item__input-text#js_filter_item_price_from(type="text" placeholder="от 100")
+    input.filter-item__input-text#js_filter_item_price_to(type="text" placeholder="от 600")
+  .filter-item
+    h5.filter-item__title Площадь
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_area#filter-item__input-checkbox--063(type="checkbox" checked value="0.63")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--063") 0,63 м2
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_area#filter-item__input-checkbox--090(type="checkbox" checked value="0.90")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--090") 0,90 м2
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_area#filter-item__input-checkbox--113(type="checkbox" checked value="1.13")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--113") 1,13 м2
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_area#filter-item__input-checkbox--156(type="checkbox" checked value="1.56")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--156") 1,56 м2
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_area#filter-item__input-checkbox--256(type="checkbox" checked value="2.56")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--256") 2,56 м2
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_area#filter-item__input-checkbox--288(type="checkbox" checked value="2.88")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--288") 2,88 м2
+  .filter-item
+    h5.filter-item__title Оснащение номера
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_equipment#filter-item__input-checkbox--empty(type="checkbox" checked value="empty")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--empty") Пустой номер
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_equipment#filter-item__input-checkbox--bed(type="checkbox" checked value="bed")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--bed") Лежак
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_equipment#filter-item__input-checkbox--scratching-post(type="checkbox" checked value="scratchingPost")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--scratching-post") Когтеточка
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_equipment#filter-item__input-checkbox--game-complex(type="checkbox" checked value="gameComplex")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--game-complex") Игровой-комплекс
+    .filter-item__option
+      input.filter-item__input-checkbox.js_filter_item_equipment#filter-item__input-checkbox--house(type="checkbox" checked value="house")
+      label.filter-item__label-checkbox(for="filter-item__input-checkbox--house") Домик

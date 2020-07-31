@@ -1,0 +1,10 @@
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  @media  (max-width: $screen-size-l) {
+    justify-content: space-evenly;
+  }
+}

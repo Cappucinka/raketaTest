@@ -1,0 +1,71 @@
+.filter {
+  flex: 0 0 211px;
+  font-family: $font-lato;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0px;
+  position: relative;
+
+  &__btn {
+    width: 185px;
+    height: 42px;
+    box-sizing: border-box;
+    background-color: $color-filter-btn;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: $font-lato;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-text;
+    margin-bottom: 11px;
+
+    &--reset {
+      display: none;
+      border: 2px solid $color-filter-btn;
+      background-color: rgba(0, 0, 0, 0);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+
+    &--active {
+      display: inline-block;
+    }
+  }
+
+  &__closebtn {
+    display: none;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 20px;
+    top: 10px;
+    right: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: $color-text;
+    cursor: pointer;
+  }
+
+  @media (max-width: $screen-size-m) {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -104px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
+    padding-top: 20px;
+
+    &--active {
+      display: block;
+    }
+
+    &__closebtn {
+      display: block;
+    }
+  }
+}

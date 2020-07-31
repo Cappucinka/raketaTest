@@ -1,0 +1,18 @@
+@import '~normalize.css';
+@import 'reset.css';
+@import 'screen-size.scss';
+@import 'colors.scss';
+@import 'typography.scss';
+@import 'mixins.scss';
+
+body {
+  font-family: $font-lato;
+  font-weight: 400;
+  color: $color-text;
+  font-size: 14px;
+  letter-spacing: -0.6px;
+}
+
+.document-body--no-scroll {
+  overflow: hidden;
+}

@@ -1,0 +1,135 @@
+.room {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  height: 421px;
+  box-sizing: border-box;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 0px 25px rgba(208, 208, 208, 0.25);
+  margin: 0 19px 30px 13px;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 20px 5px 23px 20px;
+  }
+
+  &__title {
+    font-family: $font-rubik;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  &__info {
+    font-family: $font-lato;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.15px;
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+
+  &__size,
+  &__area,
+  &__equipment {
+    margin-top: 6px;
+  }
+  
+  &__equipment-items {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+  }
+
+  &__equipment-item {
+    margin: 0 4px;
+    width: 16px;
+    height: 16px;
+
+    &--empty {
+      background-image: url(../images/icons/icon-equipment-empty.svg);
+    }
+
+    &--bed {
+      height: 12px;
+      background-image: url(../images/icons/icon-equipment-bed.svg);
+    }
+
+    &--scratching-post {
+      width: 14px;
+      background-image: url(../images/icons/icon-equipment-scratching-post.svg);
+    }
+
+    &--game-complex {
+      background-image: url(../images/icons/icon-equipment-game-complex.svg);
+    }
+
+    &--house {
+      background-image: url(../images/icons/icon-equipment-house.svg);
+    }
+  }
+
+  &__price {
+    margin-top: 11px;
+  }
+
+  &__value {
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 5px;
+  }
+
+  &__btn {
+    position: relative;
+    width: 226px;
+    height: 46px;
+    padding: 14px 50px 17px;
+    text-align: left;
+    background-color: $color-btn;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-family:  $font-lato;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: $color-btn-text;
+    cursor: pointer;
+
+    &::before {
+      content: url(../images/icons/icon-paw.svg);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      text-align: center;
+      line-height: 40px;
+    }
+
+    &:hover {
+      background-color: $color-btn-hover;
+      box-shadow: none;
+
+      &::before {
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+
+  @media  (max-width: $screen-size-l) {
+    margin: 0 10px 20px;
+  }
+}

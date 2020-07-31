@@ -1,0 +1,44 @@
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  margin-left: auto;
+  width: 60px;
+  height: 100%;
+  justify-content: center;
+  outline: none;
+
+  &__icon {
+    width: 30px;
+    height: 3px;
+    background-color: $color-text;
+    align-self: center;
+    position: relative;
+  
+    &::before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      height: 3px;
+      background-color: $color-text;
+    }
+  
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      height: 3px;
+      background-color: $color-text;
+    }
+  }
+  
+  @media (max-width: $screen-size-m) {
+    display: flex;
+    top: 70px;
+
+    &--active + .header-menu {
+      display: block;
+    }
+  }
+}
